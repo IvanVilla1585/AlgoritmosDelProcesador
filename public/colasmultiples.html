@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentación</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/materialize.css">
+</head>
+<body>
+  <header class="header">
+    <div class="boton_left">
+      <a href="roundrobin.html" class="anterior btn waves-effect waves-light">Anterior</a>
+    </div>
+    <h3>Algoritmo Colas Multiples</h3>
+    <div class="boton_right">
+      <a href="fifo.html" class="siguiente btn waves-effect waves-light">Siguiente</a>
+    </div>
+  </header>
+  <section class="container_demo">
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="delimitacion">
+          <ul>
+            <li>
+              Las colas múltiples son una solución a la problemática que se presenta cuado en los sistemas operativos
+              coexisten procesos con diferentes necesidades. Por ejemplo: pueden haber procesos interactivos, los cuales
+              requieren una planificación de tiempo compartido adecuada, pero quizás haya que ejecutar también procesos de
+              tiempo real, que no pueden estar sujetos a una expulsión por tiempo.
+              Por ello si fuera posible identificar en un sistema, clases diferenciadas de procesos (por ejemplo: tiempo
+              real, interactivos, por lotes, …), se tendría interés en establecer una cola de listos para cada clase de procesos.
+              La política de planificación se basa en algún esquema predeterminado, que da un tratamiento especial a los
+              trabajos de cada cola.
+              Para este algoritmo se requieren dos niveles de planificación:
+              Planificación dentro de cada cola: Cada cola puede utilizar su propia política de planificación,
+              de acuerdo a la clase de procesos que acoge, la cual puede ser usando diferentes algoritmos (FCFS, Round Robin, etc.).
+              Planificación entre colas:
+              Se le asigna una prioridad (P) a cada cola.
+              Se le asigna un Quantum de CPU a cada cola, que se reparte entre los procesos de cada cola.
+            </li>
+          </ul>
+        </div>
+    </div>
+    <div class="col s12 m6">
+      <figure class="img">
+        <img src="/images/colas.png" alt="">
+      </figure>
+    </div>
+  </div>
+  <div class="row">
+    <div class="campos" id="tabla">
+      <table>
+        <thead>
+          <tr>
+            <th>Proceso</th>
+            <th>Tiempo Llegada</th>
+            <th>Prioridad</th>
+            <th>Tiempo CPU (Q)</th>
+            <th>Tiempo E/S (Q)</th>
+            <th>Tiempo CPU (Q)</th>
+            <th>Tiempo E/S (Q)</th>
+            <th>Tiempo CPU (Q)</th>
+          </tr>
+        </thead>
+        <tbody id="table_round_robin">
+          <tr>
+            <td>
+              P0
+            </td>
+            <td>
+              0
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              60
+            </td>
+            <td>
+              70
+            </td>
+            <td>
+              200
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              -
+            </td>
+          </tr>
+          <tr>
+            <td>
+              P1
+            </td>
+            <td>
+              42
+            </td>
+            <td>
+              2
+            </td>
+            <td>
+              40
+            </td>
+            <td>
+              50
+            </td>
+            <td>
+              40
+            </td>
+            <td>
+              14
+            </td>
+            <td>
+              500
+            </td>
+          </tr>
+          <tr>
+            <td>
+              P2
+            </td>
+            <td>
+              66
+            </td>
+            <td>
+              3
+            </td>
+            <td>
+              100
+            </td>
+            <td>
+              810
+            </td>
+            <td>
+              300
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              -
+            </td>
+          </tr>
+          <tr>
+            <td>
+              P3
+            </td>
+            <td>
+              90
+            </td>
+            <td>
+              5
+            </td>
+            <td>
+              50
+            </td>
+            <td>
+              50
+            </td>
+            <td>
+              170
+            </td>
+            <td>
+              -
+            </td>
+            <td>
+              -
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentación</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/materialize.css">
+</head>
+<body>
+  <header class="header">
+    <div class="boton_left">
+      <a href="colasmultiples.html" class="anterior boton colorBoton formaBoton">Anterior</a>
+    </div>
+    <h1 class="tittle">Algoritmo SJF (Shortest-Job-First)</h1>
+    <div class="boton_right">
+      <a href="simulacion.html" class="siguiente boton colorBoton formaBoton">Siguiente</a>
+    </div>
+  </header>
+  <section class="container_demo">
+    <div class="row">
+      <div class="col s12">
+        <div class="delimitacion">
+          <ul>
+            <li>
+              El algoritmo SJF (Shortest-Job-First) se basa en los ciclos de vida de los procesos, los cuales
+              transcurren en dos etapas o periodos que son:
+              ciclos de CPU y ciclos de entrada/salida, también conocidos por ráfagas.
+              La palabra shortest (el más corto) se refiere al proceso que tenga el próximo
+               ciclo de CPU más corto. La idea es escoger entre todos los procesos listos el que tenga su próximo
+               ciclo de CPU más pequeño. El SJF se puede comportar de dos formas:
+              Con Desalojo: Si se incorpora un nuevo proceso a la cola de listos y este tiene un ciclo de CPU menor
+               que el ciclo de CPU del proceso que se está ejecutando, entonces dicho proceso es desalojado y el nuevo
+               proceso toma la CPU.
+              Sin desalojo: Cuando un proceso toma la CPU, ningún otro proceso podrá apropiarse de ella hasta que el
+              proceso que la posee termine de ejecutarse.
+            </li>
+          </ul>
+        </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>

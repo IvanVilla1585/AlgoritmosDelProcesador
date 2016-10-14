@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Algoritmos del Procesador</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Simulación Algoritmos del Procesador</h1>
+  </header>
+  <section>
+    <article>
+      <div class="algoritmo">
+        <label for="algoritmo">Seleccione un algoritmo</label>
+        <select name="algoritmo" id="algoritmo">
+          <option value="0">Seleccione una opción</option>
+          <option value="1">Algoritmo FIFO(First In First Out)</option>
+          <option value="2">Algoritmo Round Robin</option>
+          <option value="3">Algoritmo Prioridad</option>
+          <option value="4">Algoritmo Mas Corto</option>
+          <option value="5">Colas Multiples</option>
+        </select>
+      </div>
+    </article>
+    <article class="campos_tabla" id="campos_tabla">
+      <div class="campos" id="tabla">
+
+      </div>
+    </article>
+    <article class="cola_procesos" id="cola_procesos">
+      <h2>Cola Procesos (Estado Listo)</h2>
+      <canvas id="canvas_procesos" width="1000px" height="200px">
+
+      </canvas>
+    </article>
+    <article class="cola_procesos" id="canvas_procesadores">
+      <h2>Procesador (Estado Ejecución)</h2>
+      <canvas id="canvas_procesador" width="1010px" height="200px">
+
+      </canvas>
+    </article>
+    <article class="cola_procesos" id="canvas_procesadores">
+      <div class="entradas">
+        <h2>Entradas y Salidas (Estado Bloqueado)</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Proceso
+              </th>
+              <th>
+                Tiempo Retorno a Listo
+              </th>
+            </tr>
+          </thead>
+          <tbody id='table_entradas'>
+          </tbody>
+        </table>
+      </div>
+      <div class="entradas" >
+        <h2>Calculo Tiempos</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>
+                Proceso
+              </th>
+              <th>
+                Tiempo Retorno
+              </th>
+              <th>
+                Tiempo Espera
+              </th>
+            </tr>
+          </thead>
+          <tbody id='tabla_calculos'>
+          </tbody>
+        </table>
+      </div>
+    </article>
+  </section>
+  <script type="text/javascript" src="/js/index.js"></script>
+</body>
+</html>

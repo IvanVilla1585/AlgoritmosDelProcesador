@@ -1,0 +1,156 @@
+header h3, header h1{
+  text-align: center;
+}
+header{
+  overflow: hidden;
+  margin-top: 1.5em;
+}
+header .siguiente{
+  float: right;
+  position: relative;
+  top: -4em;
+  right: 2em;
+}
+body{
+  background: #cecece;
+}
+header .anterior{
+  float: left;
+  position: relative;
+  top: 2em;
+  left: 2em;
+}
+
+.container_pre div figure{
+  margin:  0;
+}
+.container_pre div .nombre{
+  margin-left: 3em;
+}
+.container_pre div figure img{
+  width: 100%;
+}
+.container_demo .delimitacion ul li{
+  font-size: 1.3em;
+  text-align: justify;
+}
+.container_demo div figure img{
+  width: 100%;
+}
+section{
+  width: 1270px;
+  margin: 0 auto;
+  max-width: 1270px;
+  margin-top: 3em;
+  margin-bottom: 4em;
+}
+
+section article .algoritmo{
+  text-align: center;
+}
+
+section article .algoritmo label{
+  margin-right: 2em;
+  font-size: 1.5em;
+}
+
+section .campos_tabla .campos{
+  margin-top: 2em;
+}
+
+section .campos_tabla{
+  max-width: 100%;
+}
+
+section .cola_procesos{
+  margin-top: 2em;
+  text-align: center;
+}
+
+section article .algoritmo select{
+  width: 30em;
+  line-height: 2.5em;
+  height: 2.5em;
+  font-size: 1em;
+}
+
+table {
+    width: 100%;
+    display: table;
+}
+table, th, td {
+    border: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td, th {
+    padding: 0;
+}
+td, th {
+    padding: 0;
+}
+td, th {
+    padding: 15px 5px;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    border-radius: 2px;
+    text-align: center;
+}
+table, th, td {
+    border: none;
+}
+thead, td {
+    border-bottom: 1px solid #d0d0d0;
+}
+table.striped > tbody > tr:nth-child(2n+1) {
+    background-color: #f2f2f2;
+}
+table.striped > tbody > tr > td {
+    border-radius: 0;
+}
+
+section .campos_tabla .campos .ejecutar{
+  margin-top: 2em;
+  text-align: right;
+}
+section .campos_tabla .campos .ejecutar #agregarEntradas{
+  margin-right: 2em;
+}
+section .campos_tabla .campos .ejecutar #agregarEntradas,
+section .campos_tabla .campos .ejecutar #ejecutarFifo{
+  background: #26a69a;
+  height: 3.5em;
+  color: #fff;
+  border-color: #26a69a;
+}
+section .cola_procesos .entradas{
+  width: 45%;
+  display: inline-block;
+  padding: 1em;
+}
+
+.header .tittle {
+    font-size: 2em;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: .5em;
+}
+.row .col.s6 {
+    width: 50%;
+    margin-left: auto;
+    left: auto;
+    right: auto;
+}
+.row .col {
+    float: left;
+    box-sizing: border-box;
+    padding: 0 0.75rem;
+}

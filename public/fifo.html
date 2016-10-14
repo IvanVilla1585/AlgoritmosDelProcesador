@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Presentación</title>
+  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/materialize.css">
+</head>
+<body>
+<header class="header">
+    <a href="colasmultiples.html" class="anterior btn waves-effect waves-light">Anterior</a>
+    <h3 class="">Algoritmo FIFO</h3>
+    <a href="prioridad.html" class="siguiente btn waves-effect waves-light" >Siguiente</a>
+</header>
+<section class="container_demo">
+  <div class="row">
+    <div class="col s12 m6">
+      <div class="delimitacion">
+        <ul>
+          <li>
+            Cuando se tiene que elegir a qué proceso asignar CPU se escoge al que llevara más tiempo listo. El proceso se mantiene en la CPU hasta que se bloquea voluntariamente.
+            Es de fácil implementación aunque no es válido para entornos interactivos, ya que un proceso de mucho cálculo de CPU hace aumentar el tiempo de espera de los demás procesos.
+            Para implementar el algoritmo solo se necesita mantener una cola con los procesos listos ordenada por tiempo de llegada. Cuando un proceso para de bloqueado a listo se sitúa el último de la cola.
+            Algunas de las características de este algoritmo es que es no apropiativo y justo en el sentido formal, aunque injusto en el sentido de que: los trabajos largos hacen esperar a los cortos y los trabajos
+            sin importancia hacen esperar a los importantes. Por otro lado es predecible pero no garantiza buenos tiempos de respuesta y por ello se emplea como esquema secundario.
+          </li>
+        </ul>
+      </div>
+  </div>
+  <div class="col s12 m6">
+    <figure class="img">
+      <img src="/images/fifo.png" alt="">
+    </figure>
+  </div>
+</div>
+</section>
+</body>
+</html>

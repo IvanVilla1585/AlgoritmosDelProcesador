@@ -1,0 +1,14 @@
+{
+  "name": "sistemas_operativos",
+  "version": "1.0.0",
+  "description": "Simulación de los algoritmos del procesador",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ivan Dario Villa Ramirez <trezeguet55@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.14.0"
+  }
+}
